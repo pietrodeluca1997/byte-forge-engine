@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="include\ByteForgeEngine.h" />
+    <ClInclude Include="include\ByteForgeEngine\API\EngineApiSettings.h" />
+    <ClInclude Include="include\ByteForgeEngine\Application\EngineApplication.h" />
+    <ClInclude Include="include\ByteForgeEngine\Scripting\ScriptingSubsystem.h" />
+    <ClInclude Include="include\ByteForgeEngine\Levels\GameLevel.h" />
+    <ClInclude Include="include\ByteForgeEngine\Application\EngineApplicationArguments.h" />
+    <ClInclude Include="include\ByteForgeEngine\Application\EngineApplicationPresenter.h" />
+    <ClInclude Include="include\ByteForgeEngine\Configuration\EnginePlatformConfiguration.h" />
+    <ClInclude Include="include\ByteForgeEngine\Configuration\GameStartupConfiguration.h" />
+    <ClInclude Include="include\ByteForgeEngine\Levels\GameLevelManager.h" />
+    <ClInclude Include="include\ByteForgeEngine\Scripting\ScriptingECSWrapper.h" />
+    <ClInclude Include="include\ByteForgeEngine\Core\Components\Transform2DComponent.h" />
+    <ClInclude Include="include\ByteForgeEngine\Core\Systems\Render2DSystem.h" />
+    <ClInclude Include="include\ByteForgeEngine\Core\Components\Sprite2DComponent.h" />
+    <ClInclude Include="include\ByteForgeEngine\Core\Components\AnimatedSprite2DComponent.h" />
+    <ClInclude Include="include\ByteForgeEngine\Core\Components\ParallaxSprite2DComponent.h" />
+    <ClInclude Include="include\ByteForgeEngine\Core\Components\Physics2DComponent.h" />
+    <ClInclude Include="include\ByteForgeEngine\Core\Systems\Physics2DSystem.h" />
+    <ClInclude Include="include\ByteForgeEngine\Core\Systems\Collision2DSystem.h" />
+    <ClInclude Include="include\ByteForgeEngine\Core\Components\BoxCollider2DComponent.h" />
+    <ClInclude Include="include\ByteForgeEngine\AssetManager\AssetManager.h" />
+    <ClInclude Include="include\ByteForgeEngine\Core\Systems\OpenGLRender2DSystem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ByteForgeEngine.c" />
+    <ClCompile Include="source\Application\EngineApplication.c" />
+    <ClCompile Include="source\Scripting\ScriptingSubsystem.c" />
+    <ClCompile Include="source\Application\EngineApplicationPresenter.c" />
+    <ClCompile Include="source\Configuration\PlatformConfiguration.c" />
+    <ClCompile Include="source\Configuration\GameStartupConfiguration.c" />
+    <ClCompile Include="source\Levels\GameLevelManager.c" />
+    <ClCompile Include="source\Scripting\ScriptingECSWrapper.c" />
+    <ClCompile Include="source\Core\Systems\Render2DSystem.c" />
+    <ClCompile Include="source\Application\EngineApplicationArguments.c" />
+    <ClCompile Include="source\Core\Systems\Physics2DSystem.c" />
+    <ClCompile Include="source\Core\Systems\Collision2DSystem.c" />
+    <ClCompile Include="source\AssetManager\AssetManager.c" />
+    <ClCompile Include="source\Core\Systems\OpenGLRender2DSystem.c" />
+    <ClCompile Include="source\Core\Components\ParallaxSprite2DComponent.c" />
+    <ClCompile Include="source\Core\Components\AnimatedSprite2DComponent.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="include\ByteForgeEngine\Scripting\ScriptingHelper.lua" />
+  </ItemGroup>
+</Project>

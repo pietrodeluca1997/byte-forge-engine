@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical" MembersFormat="FullSignature">
+  <Struct Name="PlatformFrameManager">
+    <Position X="5.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAABAAAAEAAAAQAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>include\Platform\PlatformFrameManager.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="PlatformData">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgCAQAAAAAAAAAAACAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>include\Platform\PlatformData.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="settings_data" />
+      <Field Name="window_data" />
+    </ShowAsAssociation>
+  </Struct>
+  <Struct Name="PlatformSettingsData">
+    <Position X="3.25" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\Platform\PlatformSettingsData.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="PlatformWindowData">
+    <Position X="3.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAJAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\Platform\PlatformWindowData.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="PlatformInputCallbackFunctionSignature" Collapsed="true">
+    <Position X="8" Y="0.5" Width="6.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\Platform\PlatformInputCallbackFunctionSignature.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

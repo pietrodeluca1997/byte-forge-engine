@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="include\ByteForgeECS.h" />
+    <ClInclude Include="include\ECS\ECS_ComponentType.h" />
+    <ClInclude Include="include\ECS\ECS_Entity.h" />
+    <ClInclude Include="include\ECS\ECS_System.h" />
+    <ClInclude Include="include\ECS\ECS_Registry.h" />
+    <ClInclude Include="include\ECS\ECS_Registry_Entity.h" />
+    <ClInclude Include="include\ECS\ECS_Registry_Component.h" />
+    <ClInclude Include="include\ECS\ECS_Registry_System.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ECS_ComponentType.c" />
+    <ClCompile Include="source\ECS_Entity.c" />
+    <ClCompile Include="source\ECS_System.c" />
+    <ClCompile Include="source\ECS_Registry.c" />
+    <ClCompile Include="source\ECS_Registry_Entity.c" />
+    <ClCompile Include="source\ECS_Registry_Component.c" />
+    <ClCompile Include="source\ECS_Registry_System.c" />
+  </ItemGroup>
+</Project>

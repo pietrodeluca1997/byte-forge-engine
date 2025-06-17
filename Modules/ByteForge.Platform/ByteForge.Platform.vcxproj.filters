@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="include\Platform\PlatformSettingsData.h" />
+    <ClInclude Include="include\Platform\PlatformWindowData.h" />
+    <ClInclude Include="include\Platform\PlatformData.h" />
+    <ClInclude Include="include\Platform\PlatformFrameManager.h" />
+    <ClInclude Include="include\Platform\PlatformContext.h" />
+    <ClInclude Include="include\ByteForgePlatform.h" />
+    <ClInclude Include="include\Platform\PlatformInputCallbackFunctionSignature.h" />
+    <ClInclude Include="include\Platform\PlatformOpenGLContext.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\PlatformSettingsData.c" />
+    <ClCompile Include="source\PlatformWindowData.c" />
+    <ClCompile Include="source\PlatformFrameManager.c" />
+    <ClCompile Include="source\PlatformContext.c" />
+    <ClCompile Include="source\PlatformData.c" />
+    <ClCompile Include="source\PlatformOpenGLLoader.c" />
+    <ClCompile Include="source\PlatformOpenGLContext.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="documents\PlatformClassDiagram.cd" />
+  </ItemGroup>
+</Project>

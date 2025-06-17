@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{24d242b0-2a10-413c-8794-2ae524e37b8c}</ProjectGuid>
+    <RootNamespace>ByteForgeEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableASAN>false</EnableASAN>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>BF_ENGINE_DLL_BUILD;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Programming\Libraries\glad\include;D:\Programming\Projects\byte-forge-project\Modules\ByteForge.OpenGL\include;D:\Programming\Libraries\SDL3_image\include;D:\Programming\Libraries\lua\include;D:\Programming\Libraries\SDL3\include;D:\Programming\Projects\byte-forge-project\Modules\ByteForge.Platform\include;D:\Programming\Projects\byte-forge-project\Modules\ByteForge.Memory\include;D:\Programming\Projects\byte-forge-project\Modules\ByteForge.Math\include;D:\Programming\Projects\byte-forge-project\Modules\ByteForge.Logging\include;D:\Programming\Projects\byte-forge-project\Modules\ByteForge.ECS\include;D:\Programming\Projects\byte-forge-project\Engine\ByteForge.Engine\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Programming\Libraries\lua;D:\Programming\Libraries\SDL3_image\lib;D:\Programming\Libraries\SDL3\libraries;D:\Programming\Projects\byte-forge-project\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>lua54.lib;SDL3.lib;SDL3_image.lib;ByteForge.OpenGL.lib;ByteForge.ECS.lib;ByteForge.Logging.lib;ByteForge.Math.lib;ByteForge.Memory.lib;ByteForge.Platform.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ByteForgeEngine.h" />
+    <ClInclude Include="include\ByteForgeEngine\API\EngineApiSettings.h" />
+    <ClInclude Include="include\ByteForgeEngine\Application\EngineApplication.h" />
+    <ClInclude Include="include\ByteForgeEngine\Application\EngineApplicationPresenter.h" />
+    <ClInclude Include="include\ByteForgeEngine\AssetManager\AssetManager.h" />
+    <ClInclude Include="include\ByteForgeEngine\Configuration\EnginePlatformConfiguration.h" />
+    <ClInclude Include="include\ByteForgeEngine\Configuration\GameStartupConfiguration.h" />
+    <ClInclude Include="include\ByteForgeEngine\Core\Components\AnimatedSprite2DComponent.h" />
+    <ClInclude Include="include\ByteForgeEngine\Core\Components\BoxCollider2DComponent.h" />
+    <ClInclude Include="include\ByteForgeEngine\Core\Components\ParallaxSprite2DComponent.h" />
+    <ClInclude Include="include\ByteForgeEngine\Core\Components\Physics2DComponent.h" />
+    <ClInclude Include="include\ByteForgeEngine\Core\Components\Sprite2DComponent.h" />
+    <ClInclude Include="include\ByteForgeEngine\Core\Components\Transform2DComponent.h" />
+    <ClInclude Include="include\ByteForgeEngine\Core\Systems\Collision2DSystem.h" />
+    <ClInclude Include="include\ByteForgeEngine\Core\Systems\OpenGLRender2DSystem.h" />
+    <ClInclude Include="include\ByteForgeEngine\Core\Systems\Physics2DSystem.h" />
+    <ClInclude Include="include\ByteForgeEngine\Core\Systems\Render2DSystem.h" />
+    <ClInclude Include="include\ByteForgeEngine\Levels\GameLevel.h" />
+    <ClInclude Include="include\ByteForgeEngine\Levels\GameLevelManager.h" />
+    <ClInclude Include="include\ByteForgeEngine\Scripting\ScriptingECSWrapper.h" />
+    <ClInclude Include="include\ByteForgeEngine\Scripting\ScriptingSubsystem.h" />
+    <ClInclude Include="include\ByteForgeEngine\Application\EngineApplicationArguments.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Application\EngineApplicationArguments.c" />
+    <ClCompile Include="source\Application\EngineApplicationPresenter.c" />
+    <ClCompile Include="source\AssetManager\AssetManager.c" />
+    <ClCompile Include="source\Configuration\GameStartupConfiguration.c" />
+    <ClCompile Include="source\Configuration\PlatformConfiguration.c" />
+    <ClCompile Include="source\Core\Components\AnimatedSprite2DComponent.c" />
+    <ClCompile Include="source\Core\Components\ParallaxSprite2DComponent.c" />
+    <ClCompile Include="source\Core\Systems\Collision2DSystem.c" />
+    <ClCompile Include="source\Core\Systems\OpenGLRender2DSystem.c" />
+    <ClCompile Include="source\Core\Systems\Physics2DSystem.c" />
+    <ClCompile Include="source\Core\Systems\Render2DSystem.c" />
+    <ClCompile Include="source\Levels\GameLevelManager.c" />
+    <ClCompile Include="source\Scripting\ScriptingECSWrapper.c" />
+    <ClCompile Include="source\Scripting\ScriptingSubsystem.c" />
+    <ClCompile Include="source\Application\EngineApplication.c" />
+    <ClCompile Include="source\ByteForgeEngine.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="include\ByteForgeEngine\Scripting\ScriptingHelper.lua">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
